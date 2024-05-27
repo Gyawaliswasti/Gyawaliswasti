@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+   
+<style>
+    .Registration {
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .legend{
+        text-align: center;
+    }
+    div {
+        margin: 5px;
+    }
+    .name {
+        width: 80%;
+        margin-left: 25px;
+    }
+    .address{
+        width: 81%;
+        margin-left: 10px;
+    }
+
+    .phone{
+        width: 81%;
+        margin-left: 20px;
+    }
+
+    #gender {
+        margin-left: 20px;
+    }
+
+    #country {
+        margin-left: 10px;
+        width: 81%;
+    }
+
+    #message {
+        margin-left: 10px;
+        width: 81%;
+    }
+    
+    .file {
+        margin-left: 20px;
+        width: 81%;
+    }
+
+    .register_button {
+        margin-left: 10px;
+        background-color: blue;
+        color: white;
+    }
+
+    .clear_button {
+        margin-left: 10px;
+        background-color: red;
+        color: white;
+    }
+
+    .personal_details_items {
+        margin-bottom: 10px;
+    }
+
+
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+  
+  <form class="Registration">
+   <fieldset>
+    <legend class="legend">Personal Details</legend>
+    <div class="personal_details_items">
+        <label for="name" id="form">Name</label>
+        <input type="text" class="name" id="form" name="phone" placeholder="Enter Name">
+    </div>
+
+    <div class="personal_details_items">
+        <label for="address" id="form">Address</label>
+        <input type="text" class="address" id="form" name="phone" placeholder="Enter Address">
+    </div>
+
+    <div class="personal_details_items">
+        <labelb for="phone" id="form">Phone</label>
+        <input type="phone" class="phone" id="form" name="phone" placeholder="Enter Phone">
+    </div>
+  
+    <div class="personal_details_items">
+        <label for="gender">Gender</label>
+        <input type="radio" id="gender" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="gender" name="gender" value="female">
+        <label for="male">Female</label>
+    </div>
+ 
+    <div class="personal_details_items">
+    <label for="country" id="country_label">Country</label>
+    <select name="country" id="country">
+        <option value="Nepal">Nepal</option>
+        <option value="India">India</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="Afganistan">Afganistan</option>
+        <option value="Bhutan">Bhutan</option>
+        <option value="Maldives">Maldives</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+    </select>
+    </div>
+
+    <div class="personal_details_items">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="2" rows="2"></textarea>
+    </div>
+
+    <div class="personal_details_items">
+        <label for="image">Image</label>
+        <input type="file" class="file">
+    </div>  
+
+    <div class="personal_details_items">
+        <input type="checkbox">
+        <label for="term_and_conditions">I Accept Terms and Conditions</label>
+    </div>  
+
+    <div class="personal_details_items">
+        <button class="register_button">Register</button>
+        <button class="clear_button">Clear</button>
+    </div>  
+    
+   </fieldset>
+  </form>
+</body>
+
+</html>
